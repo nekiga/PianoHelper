@@ -23,6 +23,7 @@ int quick_notes(void)
     char letter;
     int i;
     char notes[] = {'1','A','B','C','D','E','F','G'};
+    char *notese[] = {"1","LA","SI","DO","RE","MI","FA","SOL"};
     int round;
     int old_i;
 
@@ -35,14 +36,14 @@ int quick_notes(void)
         system("clear");
         system("setterm -bold on");
         i = rand() % (7 + 1 - 1) + 1;
-        if (old_i == i)
+        /* if (old_i == i)
         {
             if (i < 5)
                 i =+ 2;
-            else
+            else if (i > 2)
                 i =- 2;
-        }
-        printf("                                                                     %c\n", notes[i]);
+        } */
+        printf("                                                                   %C  %s\n", notes[i], notese[i]);
         round--;
         sleep(2);
         system("clear");
