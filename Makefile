@@ -1,6 +1,6 @@
 NAME = piano
-SRC =  main
-SRCW = mainw
+SRC =  main.c
+SRCW = mainw.c
 CC =  gcc
 RM =  rm -f
 AR =  ar rcs
